@@ -31,4 +31,16 @@ addItem('indkøb', 'Køb smør');
 addItem('opgaver', 'Mød op til møde');
 /* opgave 3 */
 console.group('opgave 3');
+function toggleItemDone(listKey, itemNr) {
+  const list = todoApp[listKey];
+  if (list) {
+    const item = list.items[itemNr];
+    if (item) {
+      item.done = !item.done;
+    }
+  }
+  console.log(todoApp);
+}
+
+toggleItemDone('indkøb', 2);
 console.groupEnd();
