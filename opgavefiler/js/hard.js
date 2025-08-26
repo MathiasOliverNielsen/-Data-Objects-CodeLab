@@ -21,7 +21,20 @@ console.log(todoApp);
 console.groupEnd();
 /* opgave 2 */
 console.group('opgave 2');
+// Funktion til at tilføje en ny item til en liste
+function addItem(listKey, itemText) {
+  const list = todoApp[listKey];
+  if (list) {
+    list.items.push({ text: itemText, done: false });
+    list.items.push(newItem);
+  }
+  console.log(todoApp);
+}
+addItem('shopping', 'Køb smør');
 
+// Eksempel på brug:
+addItem('list1', 'Køb kaffe');
+console.log(todoApp.list1.items);
 console.groupEnd();
 /* opgave 3 */
 console.group('opgave 3');
