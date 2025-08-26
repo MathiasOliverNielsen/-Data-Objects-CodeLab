@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS animations hard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/assignmentPage.css">
+    <script src="../js/assignmentpage.js" defer></script>
+
+    <link rel="stylesheet" href="../../opgavefiler/css/hard.css">
+    <script src="../../opgavefiler/js/hard.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <section class="assignmentTopSection">
+            <h1>Svære opgaver</h1>
+            <nav>
+                <a href="../../index.html">back</a>
+            </nav>
+            <br>
+            <p></p>
+            <br>
+
+           
+
+
+            <strong>
+
+                <p>opgaver skal skrives i filen: opgavefiler\js\hard.js</p>
+            </strong>
+
+
+    </header>
+    </section>
+    <section class="assignmentArea">
+        <header class="hard"></header>
+        <br>
+            <h2>Opgave 1</h2>
+            <br>
+Opret et objekt todoApp, som indeholder to lister.
+            </br>Hver liste er et objekt med:
+
+name: navnet på listen</br>
+items: et array af opgave-objekter, hvor hver opgave har:</br>
+text: en beskrivelse</br>
+done: en boolean</br>
+            <br>
+            <button class="hintbutton">Hint</button>
+            <div class="hint">
+
+                <pre><code>
+                       
+            const todoApp = {
+            shopping: {
+            name: "Indkøb",
+            items: [
+            { text: "Køb mælk", done: false },
+            { text: "Køb brød", done: true }
+            ]
+            },
+            school: {
+            name: "Skolearbejde",
+            items: [
+            { text: "Læs kapitel 3", done: false },
+            { text: "Skriv rapport", done: false }
+            ]
+            }
+            };
+                </code></pre>
+
+        </code></pre>
+            </div>
+        </article>
+
+
+
+    </section>
+
+     <section class="assignmentArea">
+        <header class="hard"></header>
+        <br>
+            <h2>Opgave 2</h2>
+            <br>
+Skriv en funktion addItem(listKey, itemText) som:</br>
+
+Finder den rigtige liste i todoApp via listKey</br>
+Tilføjer en ny item med text fra argumentet og done: false
+            
+            <br>
+             <br>
+
+            <button class="hintbutton">Hint</button>
+            <div class="hint">
+
+                <pre><code>
+                       
+            
+                function addItem(listKey, itemText) {
+                const list = todoApp[listKey];
+                if (list) {
+                const newItem = {text: itemText, done: false };
+                list.items.push(newItem);
+                }
+                console.log(todoApp);
+                }
+
+                addItem("shopping", "Køb smør");
+
+                </code></pre>
+
+        </code></pre>
+            </div>
+        </article>
+
+
+
+    </section>
+
+    <section class="assignmentArea">
+        <header class="hard"></header>
+        <br>
+            <h2>Opgave 3</h2>
+            
+Skriv en funktion toggleItemDone(listKey, itemNr) som:<br>
+
+Finder den rigtige liste og item
+Skifter done fra true til false eller omvendt
+            
+            <br>
+             <br>
+
+            <button class="hintbutton">Hint</button>
+            <div class="hint">
+
+                <pre><code>
+                       
+            
+                
+                function toggleItemDone(listKey, itemNr) {
+                const list = todoApp[listKey];
+                if (list) {
+                    const item = list.items[itemNr];
+                    if (item) {
+                    item.done = !item.done;
+                    }
+                }
+                    console.log(todoApp);
+                }
+
+                toggleItemDone("school", 1);
+
+
+                </code></pre>
+
+        </code></pre>
+            </div>
+        </article>
+
+
+
+    </section>
+
+
+    <footer>
+        <nav>
+            <a href="../../index.html">back</a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

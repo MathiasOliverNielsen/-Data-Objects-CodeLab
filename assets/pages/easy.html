@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> keyframes basics</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/assignmentPage.css">
+    <script src="../js/assignmentpage.js" defer></script>
+
+    <link rel="stylesheet" href="../../opgavefiler/css/easy.css">
+    <script src="../../opgavefiler/js/easy.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <section class="assignmentTopSection">
+            <h1>Nemme opgaver</h1>
+            <nav>
+                <a href="../../index.html">back</a>
+            </nav>
+            <br>
+
+                <p>opgaver skal skrives i filen: opgavefiler\js\easy.js </p>
+            </strong>
+
+
+    </header>
+    </section>
+    <section class="assignmentArea">
+        <header class="easy"></header>
+        <article>
+            <h2>Opgave 1</h2>
+            Øve oprettelse af et simpelt objekt.
+            <h3>Instruktioner</h3>Opret et objekt person med følgende egenskaber:
+
+<ul>
+<li>name: en streng med et navn</li>
+<li>age: et tal</li>
+<li>job: en streng med jobtitel</li>
+</ul>
+log dit resultat i konsollen.
+
+<br>
+
+
+
+            <br>
+            <button class="hintbutton">Hint</button>
+            <div class="hint">
+
+                <pre><code>
+                    
+                const person = {
+                name: "Bo",
+                age: 42,
+                job: "Faglærer"
+                };
+
+                console.log(person);
+
+    </code></pre>
+            </div>
+        </article>
+
+
+
+    </section>
+
+     <section class="assignmentArea">
+        <header class="easy"></header>
+        <article>
+            <h2>Opgave 2</h2>
+            <p>Øve læsning af værdier fra et objekt.</p>
+            <h3>Instruktioner</h3>
+            
+
+Opgave: Skriv kode der bruger dit objekt fra opgave 1 og udskriver følgende:
+
+<ul>
+<li>Navnet på personen</li>
+<li>Jobtitlen</li>
+<li>En sætning som f.eks. "Bo arbejder som Faglærer"</li>
+</ul>
+
+
+log dit resultat i konsollen.
+
+<br>
+
+
+
+            <br>
+            <button class="hintbutton">Hint</button>
+            <div class="hint">
+
+                <pre><code>
+                    
+                
+                console.log(person.name);       // "Bo"
+                console.log(person.job);        // "Faglærer"
+                console.log(`${person.name} arbejder som ${person.job}`);
+
+
+    </code></pre>
+            </div>
+        </article>
+
+
+
+    </section>
+
+     <section class="assignmentArea">
+        <header class="easy"></header>
+        <article>
+            <h2>Opgave 3</h2>
+            <p> Øve brug af delete til at fjerne en key-value pair..</p>
+            <h3>Instruktioner</h3>
+           
+
+Slet age fra objektet og log dit resultat i konsollen.
+            
+
+<br>
+
+
+
+            <br>
+            <button class="hintbutton">Hint</button>
+            <div class="hint">
+
+                <pre><code>
+                    
+                
+delete person.age;
+
+console.log(person);
+
+
+
+
+    </code></pre>
+            </div>
+        </article>
+
+
+
+    </section>
+
+
+
+
+    <footer>
+        <nav>
+            <a href="../../index.html">back</a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

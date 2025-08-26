@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> keyframes basics</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/assignmentPage.css">
+    <script src="../js/assignmentpage.js" defer></script>
+
+    <link rel="stylesheet" href="../../opgavefiler/css/easy.css">
+    <script src="../../opgavefiler/js/firstPage.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <section class="assignmentTopSection">
+            <h1>Forståelse af javascript data objekter</h1>
+            <nav>
+                <a href="../../index.html">back</a>
+            </nav>
+
+    </header>
+    </section>
+
+    <section class="mainDescription">
+
+
+        <p>I JavaScript er objekter en af de mest centrale og fleksible datastrukturer. Et objekt består af nøgle-værdi-par (key-value pairs), hvor hver nøgle er en streng, og hver værdi kan være en hvilken som helst datatype – fx en streng, et tal, en boolean, en array eller et andet objekt. Objekter bruges til at organisere og strukturere data, og de er fundamentet for alt fra brugerprofiler og konfigurationer til opgavelister og API-respons.</p>
+
+<p>Et objekt oprettes med krøllede parenteser <code>{}</code> og indeholder en række egenskaber. For eksempel:</p>
+
+<pre><code>const person = {
+  name: "Bo",
+  age: 42,
+  job: "Faglærer"
+};</code></pre>
+
+<p>Man kan tilgå værdierne med punktnotation (<code>person.name</code>) eller bracket-notation (<code>person["name"]</code>). Objekter er dynamiske, hvilket betyder at man kan tilføje, ændre og slette egenskaber løbende:</p>
+
+<pre><code>person.city = "Aarhus";      // Tilføjer ny egenskab
+person.age = 43;             // Ændrer eksisterende værdi
+delete person.job;           // Sletter en egenskab</code></pre>
+
+<p>Arrays bruges ofte som værdier i objekter, især når man vil gemme flere elementer under én nøgle. For eksempel:</p>
+
+<pre><code>const todoList = {
+  title: "Indkøb",
+  items: ["mælk", "brød", "smør"]
+};</code></pre>
+
+<p>Man kan manipulere arrayen via objektets egenskab:</p>
+
+<pre><code>todoList.items.push("æg");           // Tilføjer nyt item
+todoList.items[1] = "rugbrød";       // Ændrer item
+todoList.items.splice(0, 1);         // Sletter første item</code></pre>
+
+<p>Objekter kan også indeholde arrays af objekter, hvilket giver mulighed for mere kompleks datastruktur. Dette bruges ofte i applikationer som to-do lister:</p>
+
+<pre><code>const todoApp = {
+  shopping: {
+    name: "Indkøb",
+    items: [
+      { id: 1, text: "Køb mælk", done: false },
+      { id: 2, text: "Køb brød", done: true }
+    ]
+  }
+};</code></pre>
+
+<p>Ved at lære at arbejde med JavaScript-objekter får man et solidt fundament for at bygge dynamiske og interaktive webapplikationer. Objekter er essentielle i moderne frontend-udvikling og bruges i alt fra datahåndtering til komponenttilstande i frameworks som React og Vue.</p>
+
+
+
+
+    </section>
+
+
+
+
+    <footer>
+        <nav>
+            <a href="../../index.html">back</a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
