@@ -2,14 +2,14 @@
 console.group('opgave 1');
 // Opret et objekt todoApp med to lister, hver med name og items
 const todoApp = {
-  list1: {
+  indkøb: {
     name: 'Indkøb',
     items: [
       { text: 'Køb mælk', done: false },
       { text: 'Køb brød', done: true },
     ],
   },
-  list2: {
+  opgaver: {
     name: 'Arbejdsopgaver',
     items: [
       { text: 'Skriv rapport', done: false },
@@ -21,21 +21,14 @@ console.log(todoApp);
 console.groupEnd();
 /* opgave 2 */
 console.group('opgave 2');
-// Funktion til at tilføje en ny item til en liste
 function addItem(listKey, itemText) {
-  const list = todoApp[listKey];
-  if (list) {
-    list.items.push({ text: itemText, done: false });
-    list.items.push(newItem);
+  if (todoApp[listKey]) {
+    todoApp[listKey].items.push({ text: itemText, done: false });
   }
-  console.log(todoApp);
+  console.log(todoApp[listKey].items);
 }
-addItem('shopping', 'Køb smør');
-
-// Eksempel på brug:
-addItem('list1', 'Køb kaffe');
-console.log(todoApp.list1.items);
-console.groupEnd();
+addItem('indkøb', 'Køb smør');
+addItem('opgaver', 'Mød op til møde');
 /* opgave 3 */
 console.group('opgave 3');
 console.groupEnd();
